@@ -42,7 +42,7 @@ module Thredded
       authorize post, :update?
       #new_post_params = (new_post_params + "(edited)")
       edit = new_post_params
-      edit[:content] = '(edited)'
+      edit[:content]<<'(edited)'
       #print new_post_params
       post.update_attributes(edit)
 
