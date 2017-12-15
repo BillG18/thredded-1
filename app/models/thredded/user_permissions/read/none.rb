@@ -3,7 +3,7 @@
 module Thredded
   module UserPermissions
     module Read
-      module All
+      module None
         extend ActiveSupport::Concern
         included { extend ClassMethods }
 
