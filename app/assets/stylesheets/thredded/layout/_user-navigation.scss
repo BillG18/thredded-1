@@ -1,4 +1,5 @@
 .thredded--user-navigation {
+  background: red;
   @extend %thredded--nav-tabs;
   text-align: right;
   @media print {
