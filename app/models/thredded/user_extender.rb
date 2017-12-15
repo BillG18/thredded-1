@@ -4,7 +4,7 @@ module Thredded
   module UserExtender
     extend ActiveSupport::Concern
 
-    include ::Thredded::UserPermissions::Read::All
+    include ::Thredded::UserPermissions::Read::IfBlockColumnFalse
     include ::Thredded::UserPermissions::Write::All
     include ::Thredded::UserPermissions::Message::ReadersOfWriteableBoards
     include ::Thredded::UserPermissions::Moderate::IfModeratorColumnTrue
